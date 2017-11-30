@@ -38,7 +38,6 @@ inline float optionOffset(int num) {
     return .1 + (.03 * num);
 }
 
-typedef void (*optionCbk)();
 class __menu {
 private:
     bool isOpen;
