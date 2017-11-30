@@ -157,7 +157,8 @@ private:
                 addOptionBoolAlways("Explosive Ammo", expAmmo, [&]() {
                     expAmmo = !expAmmo;
                 }, [&]() {
-                    SET_EXPLOSIVE_AMMO_THIS_FRAME(PLAYER_ID());
+                    if(expAmmo)
+                        SET_EXPLOSIVE_AMMO_THIS_FRAME(PLAYER_ID());
                 });
             }
         };
