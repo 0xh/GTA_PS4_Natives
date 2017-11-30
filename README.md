@@ -17,6 +17,9 @@ This is an edit/updated version of Kurt2467's GTA5 PS3 Native Invoker (https://g
 1. Sometimes the loader payload will crash, I will fix this if enough people complain about it
 
 ## Info
+Function "loop" is our entry point and will be called many times per frame.
+Use optimization where possible as we do not have a lot of executable memory with this method.
+
 The source contains a sample menu base with a couple of options. *Spawn vehicle* is a little bugged as the car spawns under the map, I don't have much time to fix it though.
 
 I haven't exactly tested this in a while so let me know whether it's working or not.
